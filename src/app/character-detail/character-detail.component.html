@@ -1,0 +1,22 @@
+<div *ngIf="character">
+  <h2>{{character.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{character.id}}</div>
+  <div><span>Name: </span>{{character.name}}</div>
+  <div><span>Birth Year: </span>{{character.birthYear}}</div>
+  <div><span>Species: </span>{{character.species}}</div>
+  <div><span>Height: </span>{{character.height}}</div>
+  <div><span>Mass: </span>{{character.mass}}</div>
+  <div><span>Gender: </span>{{character.gender}}</div>
+  <div><span>Hair Color: </span>{{character.hairColor}}</div>
+  <div><span>Skin Color: </span>{{character.skinColor}}</div>
+  <div><span>Home World: </span>{{character.homeWorld}}</div>
+  <div><span>Comments:</span>{{character.comments}}</div>
+  <div><label>Comments:
+      <input [(ngModel)]="character.comments" placeholder="comments"/>
+  </label>
+  </div>
+     <button (click)="goBack()">Go back</button>
+  </div>
+  
+
+ 
